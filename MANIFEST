@@ -19,3 +19,4 @@ README
 t/basic.t
 t/import.t
 xt/author/pod.t
+xt/author/podcoverage.t

@@ -22,7 +22,15 @@ entersub_cb (pTHX_ OP *op, void *user_data) {
 		return op;
 	}
 
+	if (op->op_type == OP_NULL) {
+		return op;
+	}
+
 	kid = cUNOPx (op)->op_first;
+
+	if (!kid) {
+		return op;
+	}
 
 	/* pushmark for method call */
 	if (kid->op_type != OP_NULL) {

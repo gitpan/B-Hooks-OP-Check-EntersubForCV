@@ -6,8 +6,9 @@ package B::Hooks::OP::Check::EntersubForCV;
 use parent qw/DynaLoader/;
 use B::Hooks::OP::Check;
 use Scalar::Util qw/refaddr/;
+use B::Utils ();
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 sub dl_load_flags { 0x01 }
 
@@ -61,7 +62,7 @@ B::Hooks::OP::Check::EntersubForCV - Invoke callbacks on construction of entersu
 
 =head2 From C/XS
 
-    #include "hooks_op_check_entersubforcv.h"
+    #include "hook_op_check_entersubforcv.h"
 
     STATIC OP *
     my_callback (pTHX_ OP *op, CV *cv, void *user_data) {
@@ -138,7 +139,7 @@ Florian Ragwitz E<lt>rafl@debian.orgE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (c) 2008 Florian Ragwitz
+Copyright (c) 2008, 2009 Florian Ragwitz
 
 This module is free software.
 

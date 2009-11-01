@@ -16,7 +16,7 @@ SYNOPSIS
         foo(); # callback isn't invoked
 
   From C/XS
-        #include "hooks_op_check_entersubforcv.h"
+        #include "hook_op_check_entersubforcv.h"
 
         STATIC OP *
         my_callback (pTHX_ OP *op, CV *cv, void *user_data) {
@@ -82,7 +82,7 @@ AUTHOR
     Florian Ragwitz <rafl@debian.org>
 
 COPYRIGHT AND LICENSE
-    Copyright (c) 2008 Florian Ragwitz
+    Copyright (c) 2008, 2009 Florian Ragwitz
 
     This module is free software.
 

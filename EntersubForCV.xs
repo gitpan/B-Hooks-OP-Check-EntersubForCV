@@ -3,6 +3,10 @@
 #include "XSUB.h"
 #include "BUtils.h"
 
+#ifndef Newx
+# define Newx(v,n,t) New(0,v,n,t)
+#endif /* !Newx */
+
 #include "hook_op_check_entersubforcv.h"
 
 typedef struct userdata_St {

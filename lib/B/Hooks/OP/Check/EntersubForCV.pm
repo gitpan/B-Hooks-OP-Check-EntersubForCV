@@ -4,11 +4,11 @@ use warnings;
 package B::Hooks::OP::Check::EntersubForCV;
 
 use parent qw/DynaLoader/;
-use B::Hooks::OP::Check;
+use B::Hooks::OP::Check 0.19;
 use Scalar::Util qw/refaddr/;
 use B::Utils ();
 
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 
 sub dl_load_flags { 0x01 }
 

@@ -1,3 +1,7 @@
+0.08  Mon, 26 Sep 2011 19:49:30 +0100
+  * Explicitly export XS API symbols, so that the XS API can be used on
+    Windows.
+
 0.07  Sat, 10 Sep 2011 22:55:30 +0100
   * Depend on B::Hooks::OP::Check version 0.19, which fixes a serious bug in
     how it interacts with other modules that hook ops.

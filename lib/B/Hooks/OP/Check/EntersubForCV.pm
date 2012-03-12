@@ -6,9 +6,9 @@ package B::Hooks::OP::Check::EntersubForCV;
 use parent qw/DynaLoader/;
 use B::Hooks::OP::Check 0.19;
 use Scalar::Util qw/refaddr/;
-use B::Utils ();
+use B::Utils 0.19 ();
 
-our $VERSION = '0.08';
+our $VERSION = '0.09';
 
 sub dl_load_flags { 0x01 }
 

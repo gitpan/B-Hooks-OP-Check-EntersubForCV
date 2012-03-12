@@ -1,3 +1,7 @@
+0.09  Mon, 12 Mar 2012 19:49:40 +0000
+  * Depend on B::Utils version 0.19, which explicitly exports its XS
+    API symbols for Windows.
+
 0.08  Mon, 26 Sep 2011 19:49:30 +0100
   * Explicitly export XS API symbols, so that the XS API can be used on
     Windows.

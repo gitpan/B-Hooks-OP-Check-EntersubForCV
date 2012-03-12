@@ -4,11 +4,11 @@ author:
   - 'Florian Ragwitz <rafl@debian.org>'
 build_requires:
   B::Hooks::OP::Check: 0.19
-  B::Utils: 0
+  B::Utils: 0.19
   ExtUtils::MakeMaker: 6.42
 configure_requires:
   B::Hooks::OP::Check: 0.19
-  B::Utils: 0
+  B::Utils: 0.19
   ExtUtils::Depends: 0
   ExtUtils::MakeMaker: 6.42
 distribution_type: module
@@ -25,11 +25,11 @@ no_index:
     - xt
 requires:
   B::Hooks::OP::Check: 0.19
-  B::Utils: 0
+  B::Utils: 0.19
   Scalar::Util: 0
   parent: 0
 resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=B-Hooks-OP-Check-EntersubForCV
   license: http://dev.perl.org/licenses/
   repository: git://lake.fysh.org/zefram/B-Hooks-OP-Check-EntersubForCV.git
-version: 0.08
+version: 0.09

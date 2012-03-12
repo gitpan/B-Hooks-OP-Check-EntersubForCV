@@ -8,11 +8,11 @@ all_from 'lib/B/Hooks/OP/Check/EntersubForCV.pm';
 
 requires 'parent';
 requires 'Scalar::Util';
-requires 'B::Utils';
+requires 'B::Utils' => '0.19';
 requires 'B::Hooks::OP::Check' => '0.19';
-build_requires 'B::Utils';
+build_requires 'B::Utils' => '0.19';
 build_requires 'B::Hooks::OP::Check' => '0.19';
-configure_requires 'B::Utils';
+configure_requires 'B::Utils' => '0.19';
 configure_requires 'ExtUtils::Depends';
 configure_requires 'B::Hooks::OP::Check' => '0.19';
 
